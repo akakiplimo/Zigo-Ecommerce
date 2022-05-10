@@ -31,10 +31,10 @@ class CustomLayout extends React.Component {
             ) : (
               <React.Fragment>
                 <Link to="/login">
-                  <Menu.Item header>Login</Menu.Item>
+                  <Menu.Item header>Log in</Menu.Item>
                 </Link>
                 <Link to="/signup">
-                  <Menu.Item header>Signup</Menu.Item>
+                  <Menu.Item header>Sign up</Menu.Item>
                 </Link>
               </React.Fragment>
             )}
