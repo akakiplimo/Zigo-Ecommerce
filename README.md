@@ -1,10 +1,18 @@
+<p align="center">
+  <p align="center">
+    <a href="https://github.com/akakiplimo/Zigo-Ecommerce" target="_blank">
+      <img src="https://github.com/akakiplimo/Zigo-Ecommerce/blob/main/zigologo.png" alt="JustDjango" height="72">
+    </a>
+  </p>
+</p>
+
 # Zigo Ecommerce Store
 
-[![alt text](https://github.com/akakiplimo/Zigo-Ecommerce/blob/main/zigologo.png "Logo")]()
+[![alt text](https://github.com/akakiplimo/Zigo-Ecommerce/blob/main/zigologo.png "Logo")](https://github.com/akakiplimo/Zigo-Ecommerce)
 
-This repository contains a boilerplate project setup for Django and React. The project contains backend user authentication with the Django Rest Framework and rest-auth. The frontend has react redux setup for user authentication by storing the token in localstorage.
+This is an ALX Portfolio project by A.Kiplimo using Django and React. It contains instructions on how to setup the project. The project also contains backend user authentication with the Django Rest Framework and rest-auth. The frontend has react redux setup for user authentication by storing the token in localstorage.
 
-[Watch the tutorial on how to integrate Django and React](https://youtu.be/YKYVv0gm_0o)
+[Watch the tutorial on how to integrate Django and React used in setting up the project](https://youtu.be/YKYVv0gm_0o)
 
 ## Backend development workflow
 
@@ -29,12 +37,3 @@ npm run build
 ```
 
 ---
-
-<div align="center">
-
-<i>Other places you can find us:</i><br>
-
-<a href="https://www.youtube.com/channel/UCRM1gWNTDx0SHIqUJygD-kQ" target="_blank"><img src="https://img.shields.io/badge/YouTube-%23E4405F.svg?&style=flat-square&logo=youtube&logoColor=white" alt="YouTube"></a>
-<a href="https://www.twitter.com/justdjangocode" target="_blank"><img src="https://img.shields.io/badge/Twitter-%231877F2.svg?&style=flat-square&logo=twitter&logoColor=white" alt="Twitter"></a>
-
-</div>
