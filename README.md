@@ -4,7 +4,7 @@
 
 This is an ALX Portfolio project by A.Kiplimo using Django and React. It contains instructions on how to setup the project. The project also contains backend user authentication with the Django Rest Framework and rest-auth. The frontend has react redux setup for user authentication by storing the token in localstorage.
 
-[Watch the tutorial on how to integrate Django and React used in setting up the project](https://youtu.be/YKYVv0gm_0o)
+[Watch the tutorial used in setting up the project on how to integrate Django and React](https://youtu.be/YKYVv0gm_0o)
 
 ## Backend development workflow
 
