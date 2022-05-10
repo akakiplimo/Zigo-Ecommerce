@@ -8,7 +8,7 @@ This is an ALX Portfolio project by A.Kiplimo using Django and React. It contain
 
 ## Backend development workflow
 
-```json
+```
 virtualenv env
 source env/bin/activate
 pip install -r requirements.txt
@@ -17,7 +17,7 @@ python manage.py runserver
 
 ## Frontend development workflow
 
-```json
+```
 npm i
 npm start
 ```
