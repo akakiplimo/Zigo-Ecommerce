@@ -8,8 +8,14 @@ This is an ALX Portfolio project by A.Kiplimo using Django and React. It contain
 
 ```
 virtualenv env
+```
+```
 source env/bin/activate
+```
+```
 pip install -r requirements.txt
+```
+```
 python manage.py runserver
 ```
 
@@ -17,6 +23,8 @@ python manage.py runserver
 
 ```
 npm i
+```
+```
 npm start
 ```
 
