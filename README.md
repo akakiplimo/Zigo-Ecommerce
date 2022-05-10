@@ -1,11 +1,3 @@
-<p align="center">
-  <p align="center">
-    <a href="https://github.com/akakiplimo/Zigo-Ecommerce" target="_blank">
-      <img src="https://github.com/akakiplimo/Zigo-Ecommerce/blob/main/zigologo.png" alt="JustDjango" height="72">
-    </a>
-  </p>
-</p>
-
 # Zigo Ecommerce Store
 
 [![alt text](https://github.com/akakiplimo/Zigo-Ecommerce/blob/main/zigologo.png "Logo")](https://github.com/akakiplimo/Zigo-Ecommerce)
