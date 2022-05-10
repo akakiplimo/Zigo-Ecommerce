@@ -22,10 +22,10 @@ python manage.py runserver
 ## Frontend development workflow
 
 ```
-npm i
+npm install
 ```
 ```
-npm start
+npm run start
 ```
 
 ## For deploying
