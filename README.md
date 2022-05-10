@@ -24,7 +24,7 @@ npm start
 
 ## For deploying
 
-```json
+```
 npm run build
 ```
 
