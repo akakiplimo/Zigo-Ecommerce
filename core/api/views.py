@@ -16,6 +16,7 @@ class ItemListView(ListAPIView):
     serializer_class = ItemSerializer
     queryset = Item.objects.all()
 
+
 class AddToCartView(APIView):
     def post(self, request, *args, **kwargs):
         slug = request.data.get('slug', None)

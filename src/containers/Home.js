@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import React, { Component } from "react";
+import { Link, withRouter } from "react-router-dom";
 import {
   Button,
   Container,
@@ -88,98 +89,153 @@ ResponsiveContainer.propTypes = {
 
 const HomepageLayout = () => (
   <ResponsiveContainer>
-    <Segment style={{ padding: "8em 0em" }} vertical>
+    <Segment style={{ padding: "8em 0em", backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/3d.jpg'})` }} vertical>
       <Grid container stackable verticalAlign="middle">
         <Grid.Row>
           <Grid.Column width={8}>
-            <Header as="h3" style={{ fontSize: "2em" }}>
-              We Help Companies and Companions
+            <Header as="h1" style={{ fontSize: "2em" }}>
+              ZIGO STORE
             </Header>
-            <p style={{ fontSize: "1.33em" }}>
-              We can give your company superpowers to do things that they never
-              thought possible. Let us delight your customers and empower your
-              needs... through pure data analytics.
+            <p style={{ fontSize: "1.33em", fontStyle: 'italic', color: 'red' }}>
+              "One Stop shop for all your Enthusiast products."
             </p>
-            <Header as="h3" style={{ fontSize: "2em" }}>
+            {/* <Header as="h3" style={{ fontSize: "2em" }}>
               We Make Bananas That Can Dance
             </Header>
             <p style={{ fontSize: "1.33em" }}>
               Yes that's right, you thought it was the stuff of dreams, but even
               bananas can be bioengineered.
-            </p>
+            </p> */}
           </Grid.Column>
           <Grid.Column floated="right" width={6}>
             <Image
-              bordered
               rounded
               size="large"
-              src="/images/wireframe/white-image.png"
+              src="/assets/shopping-cart-icon.gif"
             />
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>
           <Grid.Column textAlign="center">
-            <Button size="huge">Check Them Out</Button>
+            <Link to="/products">
+              <Button color="black" size="huge">Our Products</Button>
+            </Link>
           </Grid.Column>
         </Grid.Row>
       </Grid>
     </Segment>
-    <Segment style={{ padding: "0em" }} vertical>
-      <Grid celled="internally" columns="equal" stackable>
+    <Segment style={{ padding: "0em", alignItems: "center", justifyContent: "center", display: "flex" }} vertical>
+      <Grid columns="equal" stackable>
         <Grid.Row textAlign="center">
           <Grid.Column style={{ paddingBottom: "5em", paddingTop: "5em" }}>
             <Header as="h3" style={{ fontSize: "2em" }}>
-              "What a Company"
+              <Image
+                size="tiny"
+                src="/assets/icons/online.png"
+              />
+              Browse Variety
             </Header>
             <p style={{ fontSize: "1.33em" }}>
-              That is what they all say about us
+              Browse a variety of products based on your preference
             </p>
           </Grid.Column>
           <Grid.Column style={{ paddingBottom: "5em", paddingTop: "5em" }}>
             <Header as="h3" style={{ fontSize: "2em" }}>
-              "I shouldn't have gone with their competitor."
+              <Image
+                size="tiny"
+                src="/assets/icons/sell.png"
+              />
+              Sell Variety
             </Header>
             <p style={{ fontSize: "1.33em" }}>
-              <Image avatar src="/images/avatar/large/nan.jpg" />
-              <b>Nan</b> Chief Fun Officer Acme Toys
+              Sell the products you are most familiar with
+            </p>
+          </Grid.Column>
+          <Grid.Column style={{ paddingBottom: "5em", paddingTop: "5em" }}>
+
+            <Header as="h3" style={{ fontSize: "2em" }}>
+              <Image
+                size="tiny"
+                src="/assets/icons/buy.png"
+              />
+              Buy Variety
+            </Header>
+            <p style={{ fontSize: "1.33em" }}>
+              Select and buy from a wide variety of products
             </p>
           </Grid.Column>
         </Grid.Row>
       </Grid>
     </Segment>
-    <Segment style={{ padding: "8em 0em" }} vertical>
-      <Container text>
-        <Header as="h3" style={{ fontSize: "2em" }}>
-          Breaking The Grid, Grabs Your Attention
+    <Segment style={{ padding: "8em 0em", alignItems: "center", justifyContent: "center", display: "flex" }} vertical>
+      <Container text style={{ align: "center" }}>
+        <Header as="h3" style={{ fontSize: "2em", textAlign: "center" }}>
+          About Us
         </Header>
         <p style={{ fontSize: "1.33em" }}>
-          Instead of focusing on content creation and hard work, we have learned
-          how to master the art of doing nothing by providing massive amounts of
-          whitespace and generic content that can seem massive, monolithic and
-          worth your attention.
+          This is a project inspired by the need for advanced ecommerce solutions to
+          provide accessible and affordable products for niche communities of enthusiasts
+          be it in gaming, sneakers, mobile & technology, beauty & cosmetics etc...
         </p>
-        <Button as="a" size="large">
-          Read More
-        </Button>
+        <p style={{ fontSize: "1.33em" }}>
+          It is a Portfolio Project by Adrian A. Kiplimo for Holberton School
+          <br /><br />
+          <a style={{ display: "flex", justifyContent: "center", alignItems: "center" }}
+            href="https://www.holbertonschool.com/" target="_blank" rel="noreferrer">
+            <Image
+              rounded
+              size="tiny"
+              src="/assets/holberton.jpeg"
+            />
+          </a>
+        </p>
         <Divider
-          as="h4"
+          as="h3"
           className="header"
           horizontal
           style={{ margin: "3em 0em", textTransform: "uppercase" }}
         >
-          <a href="#">Case Studies</a>
+          <a href="#">AUTHOR</a>
         </Divider>
-        <Header as="h3" style={{ fontSize: "2em" }}>
-          Did We Tell You About Our Bananas?
+        <Header as="h4" style={{ fontSize: "2em", textAlign: "center" }}>
+          Adrian Abraham Kiplimo
         </Header>
-        <p style={{ fontSize: "1.33em" }}>
-          Yes I know you probably disregarded the earlier boasts as non-sequitur
-          filler content, but it's really true. It took years of gene splicing
-          and combinatory DNA research, but our bananas can really dance.
-        </p>
-        <Button as="a" size="large">
-          I'm Still Quite Interested
-        </Button>
+
+        <Grid columns="equal" stackable>
+          <Grid.Row textAlign="center">
+            <Grid.Column style={{ paddingBottom: "5em", paddingTop: "5em" }}>
+              <a href="https://linkedin.com/in/adrian-a-kiplimo-55947a132/" target="_blank" rel="noreferrer">
+                <Image
+                  size="small"
+                  src="/assets/in.png"
+                />
+              </a>
+            </Grid.Column>
+            <Grid.Column style={{ paddingBottom: "5em", paddingTop: "5em" }}>
+              <a href="https://github.com/akakiplimo" target="_blank" rel="noreferrer">
+                <Image
+                  size="small"
+                  src="/assets/github.png"
+                />
+              </a>
+            </Grid.Column>
+            <Grid.Column style={{ paddingBottom: "5em", paddingTop: "5em" }}>
+              <a href="https://twitter.com/abracodeabra" target="_blank" rel="noreferrer">
+                <Image
+                  size="small"
+                  src="/assets/tw.png"
+                />
+              </a>
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+        <div align="center">
+          <a href="https://github.com/akakiplimo/Zigo-Ecommerce" target="_blank" rel="noreferrer">
+            <Button as="a" size="huge" color="black">
+              Project GitHub Repo
+            </Button>
+          </a>
+        </div>
       </Container>
     </Segment>
   </ResponsiveContainer>

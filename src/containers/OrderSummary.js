@@ -47,14 +47,21 @@ class OrderSummary extends React.Component {
                     </Table.Header>
 
                     <Table.Body>
-                        {data.order_items.map((order_item, i) => {
+                        {data.order_items.map((order_item) => {
                             return (
                                 <Table.Row key={order_item.id}>
                                     <Table.Cell>
-                                        {i}
+                                        {order_item.id}
                                     </Table.Cell>
                                     <Table.Cell>{order_item.item}</Table.Cell>
-                                    <Table.Cell>Ksh {order_item.item_obj.price}</Table.Cell>
+                                    <Table.Cell>
+                                        {/* {order_item.item_obj.discount_price && (
+                                            <span style={{ textDecoration: 'line-through' }}>
+                                                Ksh {order_item.item_obj.price}
+                                            </span>
+                                        )} */}
+                                        Ksh {order_item.item_obj.price.toLocaleString(undefined, { maximumFractionDigits: 2 })}
+                                    </Table.Cell>
                                     <Table.Cell>{order_item.quantity}</Table.Cell>
                                     <Table.Cell>
                                         {order_item.item_obj.discount_price && (
@@ -62,7 +69,7 @@ class OrderSummary extends React.Component {
                                                 ON OFFER
                                             </Label>
                                         )}
-                                        Ksh {order_item.final_price}
+                                        Ksh {order_item.final_price.toLocaleString(undefined, { maximumFractionDigits: 2 })}
                                     </Table.Cell>
                                 </Table.Row>
                             )
@@ -72,8 +79,8 @@ class OrderSummary extends React.Component {
                             <Table.Cell />
                             <Table.Cell />
                             <Table.Cell />
-                            <Table.Cell colSpan="2" textAlign="center">
-                                Total: Ksh {data.total}
+                            <Table.Cell colSpan="2" textAlign="right">
+                                Order Total: Ksh {data.total.toLocaleString(undefined, { maximumFractionDigits: 2 })}
                             </Table.Cell>
                         </Table.Row>
 
