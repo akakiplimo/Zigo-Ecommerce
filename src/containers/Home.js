@@ -173,9 +173,9 @@ const HomepageLayout = () => (
           About Us
         </Header>
         <p style={{ fontSize: "1.33em" }}>
-          This is a project inspired by the need for advanced ecommerce solutions to
-          provide accessible and affordable products for niche communities of enthusiasts
-          be it in gaming, sneakers, mobile & technology, beauty & cosmetics etc...
+          This is a project inspired by the need for an advanced, customer-focused ecommerce solution to
+          provide accessible and affordable products for niche communities of enthusiasts.
+          Such as in in gaming, sneakers, electronics, mobile & technology, beauty & cosmetics etc...
         </p>
         <p style={{ fontSize: "1.33em" }}>
           It is a Portfolio Project by Adrian A. Kiplimo for Holberton School
@@ -195,7 +195,7 @@ const HomepageLayout = () => (
           horizontal
           style={{ margin: "3em 0em", textTransform: "uppercase" }}
         >
-          <a href="#">AUTHOR</a>
+          <a href="https://akakiplimo.carrd.co" target="_blank" rel="noreferrer">AUTHOR</a>
         </Divider>
         <Header as="h4" style={{ fontSize: "2em", textAlign: "center" }}>
           Adrian Abraham Kiplimo

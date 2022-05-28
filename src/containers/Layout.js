@@ -89,43 +89,48 @@ class CustomLayout extends React.Component {
           <Container textAlign="center">
             <Grid divided inverted stackable>
               <Grid.Column width={3}>
-                <Header inverted as="h4" content="Group 1" />
-                <List link inverted>
+                <Link to="/">
+                  <Header inverted as="h4" content="Home" />
+                </Link>
+                {/* <List link inverted>
                   <List.Item as="a">Link One</List.Item>
                   <List.Item as="a">Link Two</List.Item>
                   <List.Item as="a">Link Three</List.Item>
                   <List.Item as="a">Link Four</List.Item>
-                </List>
+                </List> */}
               </Grid.Column>
               <Grid.Column width={3}>
-                <Header inverted as="h4" content="Group 2" />
-                <List link inverted>
+                <Link to="/products">
+                  <Header inverted as="h4" content="Products" />
+                </Link>
+                {/* <List link inverted>
                   <List.Item as="a">Link One</List.Item>
                   <List.Item as="a">Link Two</List.Item>
                   <List.Item as="a">Link Three</List.Item>
                   <List.Item as="a">Link Four</List.Item>
-                </List>
+                </List> */}
               </Grid.Column>
               <Grid.Column width={3}>
-                <Header inverted as="h4" content="Group 3" />
-                <List link inverted>
+                <a href="https://github.com/akakiplimo/Zigo-Ecommerce" target="_blank" rel="noreferrer">
+                  <Header inverted as="h4" content="GitHub" />
+                </a>
+                {/* <List link inverted>
                   <List.Item as="a">Link One</List.Item>
                   <List.Item as="a">Link Two</List.Item>
                   <List.Item as="a">Link Three</List.Item>
                   <List.Item as="a">Link Four</List.Item>
-                </List>
+                </List> */}
               </Grid.Column>
               <Grid.Column width={7}>
-                <Header inverted as="h4" content="Footer Header" />
+                <Header inverted as="h4" content="Zigo Store &#8482;" />
                 <p>
-                  Extra space for a call to action inside the footer that could
-                  help re-engage users.
+                  All Rights Reserved &#169;
                 </p>
               </Grid.Column>
             </Grid>
 
             <Divider inverted section />
-            <Image centered size="mini" src="/logo.png" />
+            <Image circular centered size="tiny" src="/assets/zigologo.png" />
             <List horizontal inverted divided link size="small">
               <List.Item as="a" href="#">
                 Site Map
