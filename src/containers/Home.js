@@ -89,15 +89,17 @@ ResponsiveContainer.propTypes = {
 
 const HomepageLayout = () => (
   <ResponsiveContainer>
-    <Segment style={{ padding: "8em 0em", backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/3d.jpg'})` }} vertical>
+    <Segment style={{
+      padding: "8em 0em", backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/3d.jpg'})`, backgroundRepeat: 'no-repeat', width: '100%', height: '100%'
+    }} vertical>
       <Grid container stackable verticalAlign="middle">
         <Grid.Row>
           <Grid.Column width={8}>
-            <Header as="h1" style={{ fontSize: "2em" }}>
+            <Header as="h1" style={{ fontSize: "2em", fontStyle: "oblique" }}>
               ZIGO STORE
             </Header>
             <p style={{ fontSize: "1.33em", fontStyle: 'italic', color: 'red' }}>
-              "One Stop shop for all your Enthusiast products."
+              "A one Stop shop for all your Enthusiast products."
             </p>
             {/* <Header as="h3" style={{ fontSize: "2em" }}>
               We Make Bananas That Can Dance
@@ -111,7 +113,7 @@ const HomepageLayout = () => (
             <Image
               rounded
               size="large"
-              src="/assets/shopping-cart-icon.gif"
+              src="/assets/shopping-cart.gif"
             />
           </Grid.Column>
         </Grid.Row>
