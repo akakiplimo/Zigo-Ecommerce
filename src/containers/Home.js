@@ -99,7 +99,7 @@ const HomepageLayout = () => (
               ZIGO STORE
             </Header>
             <p style={{ fontSize: "1.33em", fontStyle: 'italic', color: 'red' }}>
-              "A one Stop shop for all your Enthusiast products."
+              "A One Stop shop for all your Enthusiast products."
             </p>
             {/* <Header as="h3" style={{ fontSize: "2em" }}>
               We Make Bananas That Can Dance
